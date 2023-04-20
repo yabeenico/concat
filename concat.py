@@ -15,7 +15,7 @@ adjacent  :  concat [ "+" concat ]
 paren     :  "(" [ concat ] ")"
 brace     :  "{" [ concat ] "}"
 container :  "[" [ concat ] "]"
-ball      :  "ball"
+ball      :  "@"
 cat       :  "cat"
 %import common.WS
 %ignore WS
