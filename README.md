@@ -47,7 +47,7 @@ $ ./concat.py 'cat'
  (  \  )
  |(__)/
 
-$ ./concat.py [cat]
+$ ./concat.py '[cat]'
  --------
 | /\    /|
 |(' )  ( |
