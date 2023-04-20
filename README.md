@@ -27,6 +27,18 @@ ball      :  "@"
 cat       :  "cat"
 ```
 
+# Installation
+```
+$ git clone https://github.com/yabeenico/concat.git
+$ cd concat/
+$ pip3 install -r requirements.txt
+$ ./concat.py 'cat'
+ /\    /
+(' )  (
+ (  \  )
+ |(__)/
+```
+
 # Examples
 ```
 $ ./concat.py 'cat'
