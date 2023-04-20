@@ -2,7 +2,7 @@
 
 An implementation of [rfc9402](https://datatracker.ietf.org/doc/html/rfc9402).
 
-Supported notations (See Examples below):
+Supported notations (See [Examples](#examples) below):
 - `<>`: grouping
 - `/`: over
 - `*`: multiple
