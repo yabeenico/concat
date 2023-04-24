@@ -7,7 +7,7 @@ from functools import reduce
 # https://www.asciiart.eu/animals/cats
 
 grammar = '''
-concat    :  cat | ball | container | brace | paren | adjacent | multiple | over | group
+concat    :  cat | tac | ball | container | brace | paren | adjacent | multiple | over | group
 group      :  "<" concat ">"
 over      :  concat [ "/" concat ]
 multiple  :  concat "*" /[0-9]+/
@@ -16,6 +16,7 @@ paren     :  "(" [ concat ] ")"
 brace     :  "{" [ concat ] "}"
 container :  "[" [ concat ] "]"
 ball      :  "@"
+tac       :  "tac"
 cat       :  "cat"
 %import common.WS
 %ignore WS
@@ -99,6 +100,13 @@ class T(Transformer):
             "        \n" + \
             "   __   \n" + \
             " _/  \_@"
+
+    def tac(self, tree):
+        return \
+            "\    /\ \n" + \
+            " )  ( ')\n" + \
+            "(  /  ) \n" + \
+            " \(__)| "
 
     def cat(self, tree):
         return \
