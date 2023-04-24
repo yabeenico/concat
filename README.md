@@ -11,6 +11,7 @@ Supported notations (See [Examples](#examples) below):
 - `{}`: soft container
 - `[]`: square container
 - `@`: ball
+- `tac`: reverse cat
 - `cat`: cat
 
 BNF:
@@ -24,6 +25,7 @@ paren     :  "(" [ concat ] ")"
 brace     :  "{" [ concat ] "}"
 container :  "[" [ concat ] "]"
 ball      :  "@"
+tac       :  "tac"
 cat       :  "cat"
 ```
 
